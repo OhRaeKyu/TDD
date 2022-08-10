@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileInfo Component matches snapshot 1`] = `
+<div>
+  <div>
+    <b>
+      oooorx
+    </b>
+    <span>
+      오래규
+    </span>
+  </div>
+</div>
+`;
