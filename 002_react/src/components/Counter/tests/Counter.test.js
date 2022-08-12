@@ -9,9 +9,14 @@ describe('Counter Component', () => {
 
   it('has a number and two buttons', () => {
     render(<Counter />);
-    screen.getByText('0');
-    screen.getByText('+');
-    screen.getByText('-');
+
+    const number = screen.getByText('0');
+    const increaseBtn = screen.getByText('+');
+    const decreaseBtn = screen.getByText('-');
+
+    expect(number).toBeInTheDocument();
+    expect(increaseBtn).toBeInTheDocument();
+    expect(decreaseBtn).toBeInTheDocument();
   });
 
   it('increase', () => {
